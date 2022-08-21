@@ -1,0 +1,145 @@
+@media screen and (max-width: 767px) {
+    .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3000;
+            background: #FFFFFF;
+    
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+    
+            transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        }
+    
+        .mobile-menu.is-open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+    
+        .mobile-menu__close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+    
+    
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            line-height: 0;
+
+
+            &:hover .mobile-menu__close-icon,
+            &:focus .mobile-menu__close-icon{
+                fill: $accent-color;
+        }
+        }
+
+        .mobile-menu__close-icon {
+            fill: $primary-text-color-theme-light;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        }
+    
+        .mobile-menu__container {
+            position: relative;
+            padding-left: 40px;
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+
+        .mobile-menu-list__item:not(:last-of-type) {
+            margin-bottom: 32px;
+        }
+
+        .mobile-menu__link {
+        
+            font-family: $primary-font;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 1.18;
+            letter-spacing: 0.02em;
+            color: $primary-text-color-theme-light;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+            display: block;
+        
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+        
+        }
+
+        .mobile-menu-contact {
+            margin-top: 302px;
+
+        }
+
+        .mobile-menu-contact__item:not(:last-of-type) {
+            margin-bottom: 32px;
+        }
+
+        .mobile-menu-contact__link-tel {
+            font-family: $primary-font;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 1.18;
+            letter-spacing: 0.02em;
+            color: $accent-color;
+        }
+
+        .mobile-menu-contact__link {
+            font-family: $primary-font;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+            color: $secondary-text-color-theme-light;
+
+        }
+
+        .mobile-menu-social__item:not(:last-child)::after {
+            content: "";
+            width: 22px;
+            height: 0px;
+        
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            transform: rotate(90deg);
+
+            margin-right: 10px;
+        }
+    
+
+        .mobile-menu-social {
+            display: flex;
+            margin-top: 64px;
+            // justify-content: space-between;
+
+        }
+
+        .mobile-menu-social__link {
+            font-family: $primary-font;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.22;
+            
+            letter-spacing: 0.02em;
+            
+            color: $accent-color;
+
+            margin-right: 10px;
+
+        }
+    }
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
