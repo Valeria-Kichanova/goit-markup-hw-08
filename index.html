@@ -169,7 +169,11 @@
                 <ul class="list work__img">
                     <li class="work__item">
                         <div class="work__wrapper">
-                            <img src="./images/what-are-we-doing/box-1.jpg" alt="Чем мы занимаемся" width="370">
+                            <img 
+                            srcset="./images-new/desktop/services/desktop-app-370/desktop-app-370.jpg 1x, 
+                            ./images-new/desktop/services/desktop-app-370/desktop-app-370@2x.jpg 2x"
+                            src="./images-new/desktop/services/desktop-app-370/desktop-app-370.jpg" 
+                            alt="Чем мы занимаемся" width="370">
                             <p class="work__overlay">
                                 Десктопные приложения
                             </p>
@@ -177,7 +181,11 @@
                     </li>
                     <li class="work__item">
                         <div class="work__wrapper">
-                            <img src="./images/what-are-we-doing/box-2.jpg" alt="Чем мы занимаемся" width="370">
+                            <img 
+                            srcset="./images-new/desktop/services/mobile-app-370/mobile-app-370.jpg 1x,
+                            ./images-new/desktop/services/mobile-app-370/mobile-app-370@2x.jpg 2x"
+                            src="./images-new/desktop/services/mobile-app-370/mobile-app-370.jpg" 
+                            alt="Чем мы занимаемся" width="370">
                             <p class="work__overlay">
                                 Мобильные приложения
                             </p>
@@ -186,7 +194,11 @@
                     </li>
                     <li class="work__item">
                         <div class="work__wrapper">
-                            <img src="./images/what-are-we-doing/box-3.jpg" alt="Чем мы занимаемся" width="370">
+                            <img 
+                            srcset="./images-new/desktop/services/design-solutions-370/design-solutions-370.jpg 1x,
+                            ./images-new/desktop/services/design-solutions-370/design-solutions-370@2x.jpg 2x"
+                            src="./images-new/desktop/services/design-solutions-370/design-solutions-370.jpg" 
+                            alt="Чем мы занимаемся" width="370">
                             <p class="work__overlay">
                                 Дизайнерские решения
                             </p>
@@ -203,8 +215,30 @@
             <div class="container">
                 <h2 class="subtitle">Наша команда</h2>
                 <ul class="list team__list">
+
                     <li class="team__item">
-                        <img src="./images/our-team/igor-demyanenko.jpg" alt="Product Designer" width="270">
+                        
+                        <picture>
+
+                            
+                            <source 
+                            media="(min-width: 1200px)"
+                            srcset="./images-new/desktop/team/igor-270/igor-270.jpg 1x,
+                            ./images-new/desktop/team/igor-270/igor-270@2x.jpg 2x"/>
+                            
+                            <source 
+                            media="(min-width: 768px)"
+                            srcset="./images-new/tablet/team/igor-354/igor-354.jpg 1x,
+                            ./images-new/tablet/team/igor-354/igor-354@2x.jpg 2x"/>
+                            
+                            <source media="(max-width: 767px)" 
+                            srcset="./images-new/mobile/team/igor-450/igor-450.jpg 1x,
+                            ./images-new/mobile/team/igor-450/igor-450@2x.jpg 2x"/>
+                            
+                            
+                            <img src="./images-new/mobile/team/igor-450/igor-450.jpg" alt="Product Designer" width="270">
+                        </picture>
+
                         <div class="team__card">
                             <h3 class="team__employee-name">Игорь Демьяненко</h3>
                             <pteam__job-title" lang="en">Product Designer</p>
@@ -241,8 +275,29 @@
                            </ul>
                         </div>
                     </li>
+
                     <li class="team__item">
-                        <img src="./images/our-team/olga-repina.jpg" alt="Frontend Developer" width="270">
+
+                        <picture>
+                            
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images-new/desktop/team/olga-270/olga-270.jpg 1x,
+                            ./images-new/desktop/team/olga-270/olga-270@2x.jpg 2x" />
+                            
+                            <source media="(min-width: 768px)" 
+                            srcset="./images-new/tablet/team/olga-354/olga-354.jpg 1x,
+                            ./images-new/tablet/team/olga-354/olga-354@2x.jpg 2x" />
+                            
+                            <source media="(min-width: 320px)" 
+                            srcset="./images-new/mobile/team/olga-450/olga-450.jpg 1x,
+                            ./images-new/mobile/team/olga-450/olga-450@2x.jpg 2x" />
+                            
+                        
+                        <img src="./images-new/mobile/team/olga-450/olga-450.jpg" alt="Frontend Developer" width="270">
+                        </picture>
+
+
+
                         <div class="team__card">
                             <h3 class="team__employee-name">Ольга Репина</h3>
                             <p class="team__job-title" lang="en">Frontend Developer</p>
@@ -278,8 +333,27 @@
                             </ul>
                         </div>
                     </li>
+
                     <li class="team__item">
-                        <img src="./images/our-team/nikolai-tarasov.jpg" alt="Marketing" width="270">
+
+                        <picture>
+                        
+                            <source media="(min-width: 1200px)" 
+                            srcset="./images-new/desktop/team/nikolay-270/nikolay-270.jpg 1x,
+                            ./images-new/desktop/team/nikolay-270/nikolay-270@2x.jpg 2x" />
+                        
+                            <source media="(min-width: 768px)" 
+                            srcset="./images-new/tablet/team/nikolay-354/nikolay-354.jpg 1x,
+                            ./images-new/tablet/team/nikolay-354/nikolay-354@2x.jpg 2x" />
+                        
+                            <source media="(min-width: 320px)" 
+                            srcset="./images-new/mobile/team/nikolay-450/nikolay-450.jpg 1x,
+                            ./images-new/mobile/team/nikolay-450/nikolay-450@2x.jpg 2x" />
+                        
+                        
+                            <img src="./images-new/mobile/team/nikolay-450/nikolay-450.jpg" alt="Marketing" width="270">
+                        </picture>
+
                         <div class="team__card">
                             <h3 class="team__employee-name">Николай Тарасов</h3>
                             <p class="team__job-title" lang="en">Marketing</p>
@@ -315,8 +389,19 @@
                             </ul>
                         </div>
                     </li>
+
                     <li class="team__item">
-                        <img src="./images/our-team/mikhail-ermakov.jpg" alt="UI Designer" width="270">
+
+                        <img 
+                        srcset="./images-new/desktop/team/mykhail-270/mykhail-270.jpg 1x,
+                        ./images-new/desktop/team/mykhail-270/mykhail-270@2x.jpg 2x,
+                        ./images-new/tablet/team/mykhail-354/mykhail-354.jpg 1x,
+                        ./images-new/tablet/team/mykhail-354/mykhail-354@2x.jpg 2x,
+                        ./images-new/mobile/team/mykhail-450/mykhail-450.jpg 1x,
+                        ./images-new/mobile/team/mykhail-450/mykhail-450@2x.jpg 2x,
+                        "
+                       
+                        src="./images/our-team/mikhail-ermakov.jpg" alt="UI Designer" width="270">
                         <div class="team__card">
                             <h3 class="team__employee-name">Михаил Ермаков</h3>
                             <p class="team__job-title" lang="en">UI Designer</p>
