@@ -1,9 +1,33 @@
-.section {
-    padding-top: 94px;
+// .section {
+//     padding-top: 94px;
+// }
+
+// .team,
+// .portfolio,
+// .work {
+//     padding-bottom: 94px;
+// }
+
+@media screen and (max-width: 1199px) {
+    .section {
+            padding-top: 60px;
+        }
+    
+        .team,
+        .portfolio,
+        .work {
+            padding-bottom: 60px;
+        }
 }
 
-.team,
-.portfolio,
-.work {
-    padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+    .section {
+            padding-top: 94px;
+        }
+    
+        .team,
+        .portfolio,
+        .work {
+            padding-bottom: 94px;
+        }
 }
