@@ -48,10 +48,100 @@
 // }
 
 
+// @media screen and (max-width: 767px) {
+//     .customers__title {
+//             font-weight: 700;
+//             font-size: 28px;
+//             line-height: 1.18;
+//             text-align: center;
+//             letter-spacing: 0.03em;
+//             color: $primary-text-color-theme-light;
+//             margin-bottom: 30px;
+//         }
 
-.customers {
-    padding-bottom: 103px;
-}
+//     .customers__list {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+        
+//     }
+
+//     .customers__item {
+//         width: 210px;
+//         height: 92px;
+        
+//         // margin-right: 30px;
+        
+//         // &:nth-of-type(2n + 2) {
+//         //     margin-right: 0px;
+//         // }
+// }
+// }
+
+
+
+
+// @media screen and (min-width: 768px) {
+// .customers__title {
+//         font-weight: 700;
+//         font-size: 28px;
+//         line-height: 1.18;
+//         text-align: center;
+//         letter-spacing: 0.03em;
+//         color: $primary-text-color-theme-light;
+//         margin-bottom: 0px;
+//     }
+
+//     .customers__list {
+    //         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//     }
+
+// .customers__item {
+    //     width: 226px;
+//     height: 92px;
+//     // margin-right: 30px;
+//     // &:nth-of-type(3n + 3) {
+    //     // margin-right: 0px;
+    //     // }
+// }
+// }
+
+
+
+// @media screen and (min-width: 1200px) {
+    //     .customers__title {
+    
+        //         font-weight: 700;
+        //         font-size: 36px;
+        //         line-height: 1.17;
+        //         text-align: center;
+        //         letter-spacing: 0.03em;
+        //         color: $primary-text-color-theme-light;
+        //         margin-bottom: 50px;
+        
+        //         }
+        
+        //     .customers__list {
+//         display: flex;
+//         justify-content: center;
+//         gap: 30px;
+
+//     }
+
+//     .customers {
+    //         padding-bottom: 103px;
+    //     }
+    
+    //     .customers__item {
+        //         width: 170px;
+//         height: 92px;
+//         margin-right: 0px;
+//     }
+// }
+
+
 
 
 
@@ -79,8 +169,68 @@
 
 }
 
+.customers__list {
+    margin: -15px;
+    
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
 
-@media screen and (max-width: 1199px) {
+        // width: calc((100% - 4 * 15px) / 2);
+        // margin: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        // gap: 30px;
+    }
+}
+
+.customers__item {
+    width: 170px;
+    height: 92px;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 226px;
+
+        width: calc((100% - 12 * 15px) / 3);
+        margin: 15px;
+
+        width: 226px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .customers__title {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 1.18;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: $primary-text-color-theme-light;
+            margin-bottom: 30px;
+        }
+    }
+
+@media screen and (min-width: 768px) {
 .customers__title {
         font-weight: 700;
         font-size: 28px;
@@ -88,40 +238,21 @@
         text-align: center;
         letter-spacing: 0.03em;
         color: $primary-text-color-theme-light;
-        margin-bottom: 50px;
-    }
-
-    .customers__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .customers__item {
-        width: 226px;
-        height: 92px;
+        margin-bottom: 30px;
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .customers__title {
 
-
-
-@media screen and (mix-width: 1200px) {
-.customers__title {
-        
+        font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $primary-text-color-theme-light;
         margin-bottom: 50px;
-    }
 
-    .customers__list {
-        @extend %flex-centre;
-        gap: 30px;
+        }
 
-    }
-
-    .customers__item {
-        width: 170px;
-        height: 92px;
-    }
 }
