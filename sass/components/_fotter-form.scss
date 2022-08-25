@@ -141,9 +141,10 @@
 }
 
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     .fotter__form {
         margin: auto;
+        margin-top: 60px;
     }
 
     .footer__subscribe-form {
@@ -231,6 +232,7 @@
 }
 
 .fotter__form {
+    margin: 0px;
     margin-left: 93px;
 }
 

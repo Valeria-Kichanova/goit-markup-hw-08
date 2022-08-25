@@ -109,15 +109,21 @@
     .footer__join-in {
         display: block;
         width: 206px;
+        margin-left: 165px;
         }
 
     .footer__address {
-        margin-left: 76px;
+        // margin-left: 76px;
         text-align: center;
         }
 
     .address-list {
         text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer__info {
+        margin-left: 76px;
     }
 }
 
@@ -148,6 +154,15 @@
         margin-left: 0;
         text-align: inherit;
 }
+
+    .footer__info {
+        margin-left: 0px;
+    }
+
+    .address-list {
+        text-align: left;
+    }
+
 }
 
 
