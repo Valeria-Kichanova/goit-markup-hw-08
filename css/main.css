@@ -347,6 +347,9 @@ body {
     padding-top: 48px;
     padding-bottom: 48px;
   }
+  .mobile-menu-list {
+    margin-bottom: 302px;
+  }
   .mobile-menu-list__item:not(:last-of-type) {
     margin-bottom: 32px;
   }
@@ -364,10 +367,14 @@ body {
     color: #2196F3;
   }
   .mobile-menu-contact {
-    margin-top: 302px;
+    position: fixed;
+    bottom: 64px;
   }
   .mobile-menu-contact__item:not(:last-of-type) {
     margin-bottom: 32px;
+  }
+  .mobile-menu-contact__item:not(:first-of-type) {
+    margin-bottom: 64px;
   }
   .mobile-menu-contact__link-tel {
     font-family: "Roboto", sans-serif;
@@ -396,6 +403,8 @@ body {
   .mobile-menu-social {
     display: flex;
     margin-top: 64px;
+    position: fixed;
+    bottom: 48px;
   }
   .mobile-menu-social__link {
     font-family: "Roboto", sans-serif;
@@ -795,7 +804,7 @@ body {
   }
   .modal-form__check-desc {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 7px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575;
@@ -807,8 +816,8 @@ body {
   .modal-form__check-desc::before {
     content: "";
     display: inline-block;
-    width: 15px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     border: 2px solid #212121;
     cursor: pointer;
     border-radius: 2px;

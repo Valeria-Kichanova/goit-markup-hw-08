@@ -347,6 +347,9 @@ body {
     padding-top: 48px;
     padding-bottom: 48px;
   }
+  .mobile-menu-list {
+    margin-bottom: 302px;
+  }
   .mobile-menu-list__item:not(:last-of-type) {
     margin-bottom: 32px;
   }
@@ -364,10 +367,14 @@ body {
     color: #2196F3;
   }
   .mobile-menu-contact {
-    margin-top: 302px;
+    position: fixed;
+    bottom: 64px;
   }
   .mobile-menu-contact__item:not(:last-of-type) {
     margin-bottom: 32px;
+  }
+  .mobile-menu-contact__item:not(:first-of-type) {
+    margin-bottom: 64px;
   }
   .mobile-menu-contact__link-tel {
     font-family: "Roboto", sans-serif;
@@ -396,6 +403,8 @@ body {
   .mobile-menu-social {
     display: flex;
     margin-top: 64px;
+    position: fixed;
+    bottom: 48px;
   }
   .mobile-menu-social__link {
     font-family: "Roboto", sans-serif;

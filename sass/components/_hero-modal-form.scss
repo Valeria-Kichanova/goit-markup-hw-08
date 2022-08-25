@@ -197,7 +197,7 @@
 
     .modal-form__check-desc {
         font-weight: 400;
-        font-size: 10px;
+        font-size: 7px;
         line-height: 1.17;
 
         letter-spacing: 0.03em;
@@ -214,8 +214,8 @@
     .modal-form__check-desc::before {
         content: '';
         display: inline-block;
-        width: 15px;
-        height: 14px;
+        width: 12px;
+        height: 12px;
 
         border: 2px solid $primary-text-color-theme-light;
         cursor: pointer;

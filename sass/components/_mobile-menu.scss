@@ -55,6 +55,12 @@
             
         }
 
+        .mobile-menu-list {
+
+            margin-bottom: 302px;
+        }
+        
+
         .mobile-menu-list__item:not(:last-of-type) {
             margin-bottom: 32px;
         }
@@ -79,12 +85,18 @@
         }
 
         .mobile-menu-contact {
-            margin-top: 302px;
+            
+        position: fixed;
+        bottom: 64px;
 
         }
 
         .mobile-menu-contact__item:not(:last-of-type) {
             margin-bottom: 32px;
+        }
+
+        .mobile-menu-contact__item:not(:first-of-type) {
+            margin-bottom: 64px;
         }
 
         .mobile-menu-contact__link-tel {
@@ -121,6 +133,8 @@
         .mobile-menu-social {
             display: flex;
             margin-top: 64px;
+            position: fixed;
+            bottom: 48px;
             // justify-content: space-between;
 
         }
